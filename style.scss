@@ -1,0 +1,454 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+  color: #04122f;
+  line-height: 1.5;
+}
+
+/* Cores principais */
+:root {
+  --verde: #00a651;
+  --verde-claro: #58f1ff;
+  --azul: #0066ff;
+  --cinza-claro: #f5f7fa;
+  --texto: #04122f;
+}
+
+/* ==============================
+   CABEÇALHO
+============================== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 8%;
+  border-bottom: 1px solid #eee;
+}
+
+.logo {
+  height: 35px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav__links li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav__links li:hover {
+  color: var(--verde);
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  padding: 12px 22px;
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.btn--primary {
+  background-color: var(--verde);
+  color: #fff;
+}
+
+.btn--primary:hover {
+  background-color: #009245;
+}
+
+/* ==============================
+   HERO SECTION
+============================== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 8%;
+  gap: 50px;
+}
+
+.hero__text h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: var(--texto);
+}
+
+.hero__text h3 {
+  font-weight: 400;
+  color: #444;
+  max-width: 500px;
+}
+
+.hero__buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn--secondary {
+  background-color: var(--verde);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn--outline {
+  background-color: transparent;
+  border: 1.5px solid var(--azul);
+  color: var(--azul);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero__image {
+  max-width: 380px;
+}
+
+/* ==============================
+   ESTATÍSTICAS
+============================== */
+.stats {
+  background-color: var(--cinza-claro);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 150px;
+  padding: 60px 0;
+}
+
+.stats__item h2 {
+  color: var(--verde);
+  font-size: 1.8rem;
+}
+
+.stats__item p {
+  color: #555;
+  font-weight: 500;
+}
+
+/* ==============================
+   COMO FUNCIONA
+============================== */
+.funcionamento {
+  text-align: center;
+  padding: 80px 8%;
+}
+
+.funcionamento h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.funcionamento p {
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.caixamae {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.paradoadores,
+.passo {
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  width: 45%;
+  text-align: left;
+}
+
+.text_doadores {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--verde);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.cadastre,
+.aguarde {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.cadastre img,
+.aguarde img {
+  width: 28px;
+}
+
+.cadastre li:first-child,
+.aguarde li:first-child {
+  font-weight: 600;
+  color: var(--texto);
+}
+
+/* ==============================
+   PRODUTOS DISPONÍVEIS
+============================== */
+#produtos {
+  background-color: var(--cinza-claro);
+  padding: 80px 8%;
+  text-align: center;
+}
+
+#produtos h2 {
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+}
+
+.grid-produtos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.produto {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  width: 280px;
+  padding: 20px;
+  transition: transform 0.3s;
+}
+
+.produto:hover {
+  transform: translateY(-5px);
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.produto h3 {
+  color: var(--texto);
+  font-weight: 600;
+}
+
+.produto p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 10px 0 20px 0;
+}
+
+.btn-primario,
+.btn-secundario {
+  border: none;
+  background-color: var(--verde);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-secundario:hover,
+.btn-primario:hover {
+  background-color: #009245;
+}
+
+/* ==============================
+   DEPOIMENTOS
+============================== */
+#depoimentos {
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.cards-depoimentos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.depoimento {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  width: 300px;
+  text-align: left;
+}
+
+.estrelas {
+  width: 100px;
+  margin-bottom: 15px;
+}
+
+.texto {
+  color: #444;
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.foto-perfil {
+  width: 35px;
+  height: 35px;
+}
+
+/* ==============================
+   CALL TO ACTION (CTA)
+============================== */
+.cta {
+  background-color: var(--cinza-claro);
+  padding: 80px 8%;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.cta p {
+  color: #444;
+  margin-bottom: 25px;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn-primary {
+  background-color: var(--verde);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 8px;
+  border: none;
+}
+
+.btn-outline {
+  border: 1.5px solid var(--verde);
+  background: transparent;
+  color: var(--verde);
+  padding: 12px 25px;
+  border-radius: 8px;
+}
+
+/* ==============================
+   RODAPÉ
+============================== */
+footer {
+  background-color: #040e23;
+  color: #fff;
+  padding: 60px 8% 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.footer-logo img {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.footer-logo p {
+  color: #ccc;
+  font-size: 0.9rem;
+  max-width: 260px;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-nav h4 {
+  margin-bottom: 10px;
+}
+
+.footer-nav ul {
+  list-style: none;
+}
+
+.footer-nav li {
+  margin-bottom: 5px;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+  color: var(--verde);
+}
+
+.footer-social p {
+  color: #ccc;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.social-icons img {
+  width: 24px;
+  cursor: pointer;
+  transition: opacity 0.3s;
+}
+
+.social-icons img:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  text-align: center;
+  color: #999;
+  border-top: 1px solid #1a2236;
+  padding-top: 20px;
+  font-size: 0.85rem;
+}
+
